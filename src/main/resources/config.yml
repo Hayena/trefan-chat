@@ -1,0 +1,24 @@
+database.address: localhost
+database.name: minecraft
+database.port: 3306
+database.username: root
+database.password: password
+database.prefix: ""
+
+default.channels: 
+  - global
+  - moderator
+
+chat.global.type: channel
+chat.global.name: Global 
+chat.global.tag: G
+chat.global.format: "[{channel}] {prefix} {player}: &7{suffix}{msg}"
+
+chat.moderator.type: special
+chat.moderator.name: Moderator
+chat.moderator.tag: MOD
+chat.moderator.permission: chat.moderator
+chat.moderator.format: "&5[{channel}] {player}: &7{msg}"
+
+chat.town.format: "&9[{channel}]{prefix}<{player}>: &b{msg}"
+chat.nation.format: "&6[{channel}]{prefix}<{player}>: &e{msg}"

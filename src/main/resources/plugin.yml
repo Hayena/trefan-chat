@@ -1,0 +1,23 @@
+name: Trefan-chat
+main: eu.trefan.chat.ScalaPlugin
+version: 0.1
+website: http://trefan.eu
+author: Hayena
+description: Chat plugin for Trefan
+commands:
+  chat:
+    description: Chat commands
+    aliases: [c]
+    useage: /chat
+  mod:
+    description: Moderator chat command
+    aliases: [m]
+    useage: /mod [message]
+  tc:
+    description: Town Chat
+    aliases: [townchat]
+    useage: /tc [message]
+  nc:
+    description: Nation Chat
+    aliases: [nationchat]
+    useage: /nc [message]  
