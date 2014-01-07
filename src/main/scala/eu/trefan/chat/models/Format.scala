@@ -13,6 +13,7 @@ object Format {
 					 .replace("{prefix}", getInfo(sender, "prefix"))
 					 .replace("{player}", sender.getName())
 					 .replace("{suffix}", getInfo(sender, "suffix"))
+					 .replace("  ", " ")
 					 .replace("{msg}", newMessage)
 	  
 	  colorFormat(format)

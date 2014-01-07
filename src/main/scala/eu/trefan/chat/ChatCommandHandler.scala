@@ -13,7 +13,7 @@ class ChatCommandHandler(plugin: ScalaPlugin) extends CommandExecutor {
         args.length match {
           case 0 => false
           case _ => {
-            if (sender.isInstanceOf[Player] && sender.hasPermission("chat.mod")) {
+            if (sender.isInstanceOf[Player]) {
               val player = getPlayer(sender)
               plugin.chatManager.channels("Moderator").send(player, args)
             }
@@ -26,8 +26,10 @@ class ChatCommandHandler(plugin: ScalaPlugin) extends CommandExecutor {
           case 0 => false
           case 1 => args(0).toLowerCase match {
             case "reload" => {
-              plugin.reloadConfig()
-              sender.sendMessage(ChatColor.GREEN + "Config reloaded")
+              if (sender.hasPermission("chat.moderator")) {
+                plugin.reloadConfig()
+                sender.sendMessage(ChatColor.GREEN + "Config reloaded")
+              }
             }
             case _ => false
           }

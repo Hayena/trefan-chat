@@ -13,7 +13,6 @@ commands:
     description: Moderator chat command
     aliases: [m]
     permission: chat.moderator
-    permission-message: You are not allowed to use this command
     useage: /mod [message]
   tc:
     description: Town Chat
