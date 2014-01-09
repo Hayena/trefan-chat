@@ -8,7 +8,7 @@ scalaVersion := "2.10.3"
 
 resolvers ++= Seq(
         "org.bukkit" at "http://repo.bukkit.org/content/repositories/releases/",
-        "trefan" at "http://maven.trefan.eu:8081/artifactory/simple/ext-release-local/")
+        "trefan" at "http://maven.trefan.eu/artifactory/simple/ext-release-local/")
 
 libraryDependencies ++= Seq(
         "org.bukkit" % "bukkit" % "1.6.4-R2.0",
